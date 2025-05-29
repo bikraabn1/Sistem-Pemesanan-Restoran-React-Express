@@ -1,0 +1,15 @@
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url("./assets/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@import "tailwindcss";
+
+@theme{
+    --font-playfairdisplay: "PlayfairDisplay", serif;
+    --color-brown : #521C0D;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

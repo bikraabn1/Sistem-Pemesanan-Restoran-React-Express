@@ -1,0 +1,102 @@
+{
+    "food" : [
+        {
+            "id": 1,
+            "name": "Ayam Geprek",
+            "price": 23000,
+            "imageurl": "https://www.dapurkobe.co.id/wp-content/uploads/kulit-ayam-crispy-geprek.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Ayam Goreng",
+            "price": 19000,
+            "imageurl": "https://assets.unileversolutions.com/v1/129343159.png"
+        },
+        {
+            "id": 3,
+            "name": "Ayam Rebus",
+            "price": 17000,
+            "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbtUvKn-oedBDxHoPx7Sod2_o1hyyOda_wxQ&s"
+        },
+        {
+            "id": 4,
+            "name": "Ayam Kecap",
+            "price": 25000,
+            "imageurl": "https://www.dapurumami.com/uploads/recipe/ayam-kecap-khas-sunda-qcmobezp-c88e8362ac6f21903ae0a784ffae2564.webp"
+        },
+        {
+            "id": 5,
+            "name": "Ayam Gulai",
+            "price": 30000,
+            "imageurl": "https://assets.unileversolutions.com/recipes-v2/238136.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Bebek Goreng",
+            "price": 28000,
+            "imageurl": "https://i0.wp.com/resepkoki.id/wp-content/uploads/2016/04/Resep-Bebek-Goreng-Surabaya.jpg?fit=1275%2C1199&ssl=1"
+        },
+        {
+            "id": 7,
+            "name": "Bebek Peking",
+            "price": 20000,
+            "imageurl": "https://www.unileverfoodsolutions.co.id/dam/ufs-id/recipes/Peking%20Duck.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Bebek Gulai",
+            "price": 35000,
+            "imageurl": "https://asset.kompas.com/crops/tIAs22zl5LSpl3suOFcaarUPC24=/3x0:700x465/1200x800/data/photo/2021/08/11/611382945c873.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Bebek Bumbu Hijau",
+            "price": 36000,
+            "imageurl": "https://cdn0-production-images-kly.akamaized.net/wjXJmShZy8GdHrio14k4phDihJQ=/0x396:666x771/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3226263/original/054610300_1599034189-shutterstock_1368092711.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Bebek Bumbu Hitam",
+            "price": 35000,
+            "imageurl": "https://www.poultryindonesia.com/wp-content/uploads/2023/07/106493138_1927180047413113_3512181707289549957_n.jpg"
+        }
+    ],
+    "drink" : [
+        {
+            "id": 11,
+            "name": "Es Teh Manis",
+            "price": 5000,
+            "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCjc_4FBea-ScTF3Te5IoMIcjPpdpEFOJwdw&s"
+        },
+        {
+            "id": 12,
+            "name": "Es Jeruk",
+            "price": 7000,
+            "imageurl": "https://doktersehat.com/wp-content/uploads/2018/09/jus-jeruk.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Air Mineral",
+            "price": 3000,
+            "imageurl": "https://awsimages.detik.net.id/community/media/visual/2020/05/08/bff94ffc-2d9e-4805-ba7e-c19992006d06_43.jpeg?w=650"
+        },
+        {
+            "id": 14,
+            "name": "Kopi Susu",
+            "price": 8000,
+            "imageurl": "https://assets.unileversolutions.com/v1/135079384.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Teh Tarik",
+            "price": 9000,
+            "imageurl": "https://asset.kompas.com/crops/hsrnlGnJjSvQmAEyoV_dmwBbUi4=/120x80:1000x667/1200x800/data/photo/2023/10/18/652fcf5eb1b28.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Soda Gembira",
+            "price": 10000,
+            "imageurl": "https://img-global.cpcdn.com/recipes/34e6f664586a882c/680x482cq90/es-soda-gembira-foto-resep-utama.jpg"
+        }
+    ]
+}
