@@ -11,10 +11,10 @@ const DeliveryConfirmator = (props) => {
         e.preventDefault()
         try{
             const res = await handleAddOrderItem(filteredOrder)
-            console.log(res)
             props.clearOrder()
             props.onClose()
             props.handleDeliverySuccess(res)
+
         }catch(e){
             console.error("Error during delivery:", e);
         }

@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import Basket from "./components/Basket"
 import DeliveryConfirmator from "./components/DeliveryConfirmator"
 import PaymentNote from "./components/PaymentNote"
+import History from "./components/History"
 
 function App() {
   const { foods, drinks } = useContext(MenuContext)
@@ -13,6 +14,7 @@ function App() {
   const [onPay, setOnPay] = useState(false)
   const [paymentNoteData, setPaymentNoteData] = useState(null)
   const [showPaymentNote, setShowPaymentNote] = useState(false)
+  const [showHistory, setShowHistory] = useState(false)
 
   const addToOrder = (item) => {
     setOrder(prevOrder => {
@@ -72,7 +74,7 @@ function App() {
 
   return (
     <div className='min-h-screen grid grid-cols-12 grid-rows-[auto_1fr] font-playfairdisplay'>
-      <Navbar />
+      <Navbar onOpenHistory={() => setShowHistory(true)}/>
 
       <div className="col-span-10 col-start-2">
         <h2 className="text-2xl font-bold my-5">Makanan</h2>
@@ -146,6 +148,13 @@ function App() {
           totalBeforeTax={paymentNoteData.total}
           show={showPaymentNote}
           onClose={() => setShowPaymentNote(false)}
+        />
+      }
+
+      {
+        showHistory && <History 
+          onClose={() => setShowHistory(false)}
+          show={showHistory}
         />
       }
     </div>

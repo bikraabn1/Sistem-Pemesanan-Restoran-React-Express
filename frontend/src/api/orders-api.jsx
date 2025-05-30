@@ -16,6 +16,11 @@ export const handleAddOrderItem = async (orders) => {
         }
 
         const data = await response.json();
+
+        const history = JSON.parse(localStorage.getItem("history")) || [];
+        history.push(data);
+        localStorage.setItem("history", JSON.stringify(history));
+
         return data
     }catch(err){
         console.error("Error adding order item:", err);
