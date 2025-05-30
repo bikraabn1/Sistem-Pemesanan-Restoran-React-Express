@@ -114,7 +114,7 @@ function App() {
 
       {
         (order.length > 0 && totalPrice > 0 )&& (
-          <Basket total={totalPrice} onPay={() => handleOnPay()} />
+          <Basket total={totalAfterTax} onPay={() => handleOnPay()} />
         )
       }
 
