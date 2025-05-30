@@ -13,10 +13,10 @@ Sebuah aplikasi full-stack untuk manajemen pemesanan restoran
 
 ## Struktur Folder
 
-Sistem-Pemesanan-Restoran-React-Express/
-├── backend/          # Aplikasi React (Frontend)
-├── frontend/          # Aplikasi Express (Backend
-├── Readme.md/          # Dokumentasi Aplikasi
+Sistem-Pemesanan-Restoran-React-Express/ \
+ ├── backend/          # Aplikasi React (Frontend) \
+ ├── frontend/          # Aplikasi Express (Backend) \
+ ├── Readme.md/          # Dokumentasi Aplikasi 
 
 ## Instalasi
 
