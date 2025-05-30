@@ -187,3 +187,5 @@ Tampilan ketika menu ditambahkan
 ![Invoice](./docs-img/invoice.png)
 Hasil Download
 ![Invoice PDF](./docs-img/nota-pdf.png)
+#### <b>7. Menampilkan Riwayat Pemesanan dengan menekan tombol riwayat di bagian kanan atas<b>
+![History](./docs-img/riwayat.png)
