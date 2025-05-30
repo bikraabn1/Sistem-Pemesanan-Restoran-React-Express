@@ -113,7 +113,7 @@ function App() {
       </div>
 
       {
-        order.length > 0 && (
+        (order.length > 0 && totalPrice > 0 )&& (
           <Basket total={totalPrice} onPay={() => handleOnPay()} />
         )
       }
