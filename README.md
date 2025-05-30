@@ -168,12 +168,22 @@ dan akan mendapat response sebagai berikut
 
 ### Frontend
 #### <b>1. Menampilkan Menu Restoran<b>
+![Menu](./docs-img/menu.png)
+Tampilan ketika menu ditambahkan
+![Menu](./docs-img/menu-tambah-pesanan.png)
 #### <b>2. Menampilkan Pop Up Daftar Pesanan yang di pesan<b>
+![Popup Daftar Pesanan](./docs-img/daftar-pesanan.png)
 #### <b>3. Tombol untuk Mengurangi atau menambah jumlah tiap item pesanan yang akan di pesan di dalam popup<b>
-#### <b>4. Menampilkan Daftar Pesanan yang berisi :<b>
+![Tombol Kurang Tambah](./docs-img/tombol-kurang-tambah.png)
+#### <b>4. Menampilkan Daftar Harga yang berisi :<b>
 * Harga Subtotal
 * Jumlah diskon yang di dapat apa bila total harga lebih dari 50000(10%)
 * Jumlah pajak yang di tambahkan(10%)
 * Total harga setelah diskon dan pajak.
+![Daftar Harga](./docs-img/daftar-harga.png)
 #### <b>5.Tombol Kirim Pesanan untuk mendapatkan Nota Pembayaran/Invoice<b>
+![Tombol Kirim Pesanan](./docs-img/tombol-kirim-pesanan.png)
 #### <b>6. Menampilkan Nota Pembayaran yang bisa di unduh sebagai PDF<b>
+![Invoice](./docs-img/invoice.png)
+Hasil Download
+![Invoice PDF](./docs-img/nota-pdf.png)
