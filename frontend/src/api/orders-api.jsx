@@ -16,7 +16,6 @@ export const handleAddOrderItem = async (orders) => {
         }
 
         const data = await response.json();
-        console.log(data)
         return data
     }catch(err){
         console.error("Error adding order item:", err);

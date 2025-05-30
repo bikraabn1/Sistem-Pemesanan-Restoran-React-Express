@@ -3,13 +3,16 @@ import { MenuContext } from "./lib/MenuContext"
 import { useContext, useEffect, useState } from "react"
 import Navbar from "./components/Navbar"
 import Basket from "./components/Basket"
-import PaymentConfirmator from "./components/PaymentConfirmator"
+import DeliveryConfirmator from "./components/DeliveryConfirmator"
+import PaymentNote from "./components/PaymentNote"
 
 function App() {
   const { foods, drinks } = useContext(MenuContext)
   const [order, setOrder] = useState([])
   const [getDiscount, setGetDiscount] = useState(false)
   const [onPay, setOnPay] = useState(false)
+  const [paymentNoteData, setPaymentNoteData] = useState(null)
+  const [showPaymentNote, setShowPaymentNote] = useState(false)
 
   const addToOrder = (item) => {
     setOrder(prevOrder => {
@@ -46,6 +49,11 @@ function App() {
 
   const clearOrder = () => {
     setOrder([])
+  }
+
+  const handleDeliverySuccess = (responseData) => {
+    setPaymentNoteData(responseData)
+    setShowPaymentNote(true)
   }
 
   const subTotal = order.reduce((total, item) => {
@@ -111,18 +119,34 @@ function App() {
       }
 
       {
-        onPay && <PaymentConfirmator
+        onPay && <DeliveryConfirmator
           order={order}
-          onClose={() => handleOnPay()}
+          onClose={handleOnPay}
           onIncrease={increaseQuantity}
           onDecrease={decreaseQuantity}
           clearOrder={clearOrder}
+          totalBeforeTax={totalPrice}
           total={totalAfterTax}
           discount={discount}
           getDiscount={getDiscount}
           tax={tax}
           subTotal={subTotal} 
+          handleDeliverySuccess={handleDeliverySuccess}
           />
+      }
+
+      {
+        showPaymentNote && <PaymentNote 
+          message={paymentNoteData.message}
+          order={paymentNoteData.order}
+          subtotal={paymentNoteData.subTotal}
+          discount={paymentNoteData.discount}
+          tax={paymentNoteData.tax}
+          total={paymentNoteData.totalAfterTax}
+          totalBeforeTax={paymentNoteData.total}
+          show={showPaymentNote}
+          onClose={() => setShowPaymentNote(false)}
+        />
       }
     </div>
   )

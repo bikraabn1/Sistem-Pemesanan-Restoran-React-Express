@@ -38,17 +38,19 @@ app.post('/orders', (req, res) => {
 
     getDiscount ?
         res.json({
-            message : "Pembayaran Berhasil!!",
+            message : "Pengiriman Berhasil!!",
             order: items,
             subTotal,
             discount,
+            total,
             tax,
             totalAfterTax
         }):
         res.json({
-            message : "Pembayaran Berhasil!!",
+            message : "Pengiriman Berhasil!!",
             order: items,
             subTotal,
+            total,
             tax,
             totalAfterTax
         })
